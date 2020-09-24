@@ -1,0 +1,17 @@
+ @import "main-page.scss";
+ @import '../bootstrap/css/bootstrap.min.css';
+ @import "../js/slick/slick-theme.css";
+@import "../js/slick/slick.css";
+@import "why-we.scss";
+@import "price.scss";
+ * {
+     margin: 0;
+     padding: 0;
+     outline: none;
+     box-sizing: border-box;
+     line-height: 1;
+     font-family: Ubuntu;
+ }
+ button:focus{
+    outline: none;
+}
