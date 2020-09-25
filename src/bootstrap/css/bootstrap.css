@@ -5955,7 +5955,7 @@ button.close {
   color: #fff;
   text-decoration: none;
   outline: 0;
-  opacity: .9;
+  /* opacity: .9; */
 }
 
 .carousel-control-prev {

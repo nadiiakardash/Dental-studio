@@ -1,20 +1,20 @@
 import $ from "jquery";
 require('./slick/slick');
 import '../bootstrap/js/bootstrap.min.js';
-
 window.openNav = function () { openNav() };
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
     document.getElementById("myNav").style.height = "100%";
     document.getElementById("myNav").style.position = "fixed";
- 
+    document.getElementById("for-mobile").style.opacity = "0";
+    
 }
 window.closeNav = function () { closeNav() };
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
     document.getElementById("myNav").style.height = "0%";
     document.getElementById("myNav").style.position = "none";
-  
+    document.getElementById("for-mobile").style.opacity = "1";
 }
 
 window.btnOver = function () { btnOver() };
@@ -58,7 +58,32 @@ function allVeneers2() {
     $('.price-do3').hide( "slow");
 }   
 
+ 
+window.langShow = function () { langShow() };
+function langShow() { 
+    $('.arrow-lang').css("transform","rotate(180deg)");
+    $('.ukr-lang').css("display","block");
+    $('.rus-lang').css(" padding-bottom","33px");
+}  
+window.langHide = function () { langHide() };
+function langHide() {
+    $('.arrow-lang').css("transform","rotate(0deg)");
+    $('.ukr-lang').css("display","none");
+    $('.rus-lang').css(" padding-bottom","0px");
+}  
 
+window.changeCity = function () { changeCity() };
+function changeCity() {
+    $('.head_address').css("display","none");
+    $('#odessa').css("display","block");
+    
+}
+window.changeCityKyiv = function () { changeCityKyiv() };
+function changeCityKyiv() {
+    $('.head_address').css("display","block");
+    $('#odessa').css("display","none");
+    
+}
     $('.multiple-items').slick({
         infinite: true,
         slidesToShow: 1,
@@ -67,3 +92,9 @@ function allVeneers2() {
         prevArrow: $('.prev-ar'),
         nextArrow: $('.next-ar'),
       });
+      $("#menu").on("click", "a", function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top - 0;
+        $('body,html').animate({ scrollTop: top }, 1600);
+    });

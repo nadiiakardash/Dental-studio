@@ -15352,6 +15352,7 @@ function openNav() {
   document.getElementById("myNav").style.width = "100%";
   document.getElementById("myNav").style.height = "100%";
   document.getElementById("myNav").style.position = "fixed";
+  document.getElementById("for-mobile").style.opacity = "0";
 }
 
 window.closeNav = function () {
@@ -15362,6 +15363,7 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
   document.getElementById("myNav").style.height = "0%";
   document.getElementById("myNav").style.position = "none";
+  document.getElementById("for-mobile").style.opacity = "1";
 }
 
 window.btnOver = function () {
@@ -15424,6 +15426,44 @@ function allVeneers2() {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.price-do3').hide("slow");
 }
 
+window.langShow = function () {
+  langShow();
+};
+
+function langShow() {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.arrow-lang').css("transform", "rotate(180deg)");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.ukr-lang').css("display", "block");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.rus-lang').css(" padding-bottom", "33px");
+}
+
+window.langHide = function () {
+  langHide();
+};
+
+function langHide() {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.arrow-lang').css("transform", "rotate(0deg)");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.ukr-lang').css("display", "none");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.rus-lang').css(" padding-bottom", "0px");
+}
+
+window.changeCity = function () {
+  changeCity();
+};
+
+function changeCity() {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.head_address').css("display", "none");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#odessa').css("display", "block");
+}
+
+window.changeCityKyiv = function () {
+  changeCityKyiv();
+};
+
+function changeCityKyiv() {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.head_address').css("display", "block");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#odessa').css("display", "none");
+}
+
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('.multiple-items').slick({
   infinite: true,
   slidesToShow: 1,
@@ -15431,6 +15471,14 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.multiple-items').slick({
   dots: false,
   prevArrow: jquery__WEBPACK_IMPORTED_MODULE_0___default()('.prev-ar'),
   nextArrow: jquery__WEBPACK_IMPORTED_MODULE_0___default()('.next-ar')
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()("#menu").on("click", "a", function (event) {
+  event.preventDefault();
+  var id = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('href'),
+      top = jquery__WEBPACK_IMPORTED_MODULE_0___default()(id).offset().top - 0;
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('body,html').animate({
+    scrollTop: top
+  }, 1600);
 });
 
 /***/ }),
@@ -18145,8 +18193,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\vvn09\Desktop\Dental studio\src\js\app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\vvn09\Desktop\Dental studio\src\sass\app.scss */"./src/sass/app.scss");
+__webpack_require__(/*! C:\Users\Vasyl\Documents\Dental-studio\src\js\app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\Vasyl\Documents\Dental-studio\src\sass\app.scss */"./src/sass/app.scss");
 
 
 /***/ })
