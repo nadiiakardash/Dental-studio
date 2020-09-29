@@ -97,4 +97,22 @@ function changeCityKyiv() {
         var id = $(this).attr('href'),
             top = $(id).offset().top - 0;
         $('body,html').animate({ scrollTop: top }, 1600);
+      
     });
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+        $('.arrow-top').fadeIn();
+        $('.arrow-top').css('position','fixed');
+ 
+       
+        } else {
+        $('.arrow-top').fadeOut();
+       
+        }
+    })
+        $('.arrow-top').click(function () {
+            $("html, body").animate({
+                scrollTop: 0
+            }, 1000);
+            return false;
+        });

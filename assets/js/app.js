@@ -15480,6 +15480,20 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()("#menu").on("click", "a", function
     scrollTop: top
   }, 1600);
 });
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).scroll(function () {
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).scrollTop() > 200) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.arrow-top').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.arrow-top').css('position', 'fixed');
+  } else {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.arrow-top').fadeOut();
+  }
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.arrow-top').click(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()("html, body").animate({
+    scrollTop: 0
+  }, 1000);
+  return false;
+});
 
 /***/ }),
 
