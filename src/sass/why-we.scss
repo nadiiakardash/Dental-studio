@@ -162,26 +162,26 @@ text-align: center;
 color: #11B9ED;
 width: 203px;
 height: 50px;
-padding-top: 10.5px;
+
 border: 2px solid #11B9ED;
 border-radius: 30px;
 background: transparent;
 cursor: pointer;
 transition: 0.3s ease;
-a{
-    color: #11B9ED;
-    transition: 0.3s ease;
-}
+// a{
+//     color: #11B9ED;
+//     transition: 0.3s ease;
+// }
 &:hover {
-    
+    color: white;
     background-color: #11B9ED;
 }
  
 }
-.call-btn-team:hover a{
-    color: white;
-    text-decoration: none;
-}
+// .call-btn-team:hover a{
+//     color: white;
+//     text-decoration: none;
+// }
 .grafic{
     margin-top: 130px;
     background: #F0F7FB;
