@@ -7,28 +7,26 @@
 .arrow-top{
     z-index: 99;
     cursor: pointer;
- right: 80px;
+ right:85px;
  bottom: 50px;
  position: absolute;
  display: none;
  border: 1px solid #0997ea;
  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.1);
  border-radius: 50%;
- padding: 30px;
+ padding: 15px;
  box-sizing: content-box;
  transition: 0.2s ease;
  &:hover{
     box-shadow:none;
-     padding: 20px;
-     right: 90px;
-     bottom: 60px;
+   
  }
 }
 .modal-footer {
     border-top: none;
 }
 .t825__animated-circle{
-    left: 40px;
+    display: none;
     width: 60px;
     height: 60px;
     background:#0fa6da;
@@ -43,8 +41,10 @@ z-index: 99;
  
  
 .t825__btn{
+    z-index: 999;
     position: fixed;
-    bottom: 97px;
+    bottom: 197px;
+    right: 145px;
 }
 .t825__icon{
     padding: 13px;
@@ -65,7 +65,7 @@ z-index: 99;
     position: absolute;
   text-align: center;
     bottom: 10px;
-    left: 40px;
+    left: 0px;
     a{
         text-decoration: none;
         font-size: 14px;
@@ -81,11 +81,15 @@ z-index: 99;
         background-color: white;
         padding: 10px;
         border-radius: 20px;
+        margin-left: -14px;
     }
-    .t825__btn{
-        position: fixed;
-        bottom: 85px;
-    }
+  
+    // .t825__btn{
+    //     position: fixed;
+    //     bottom: 167px;
+    //     right: 117px;
+    //     z-index: 999;
+    // }
 }
 
 .modal-content {
@@ -648,19 +652,19 @@ header {
 }
 
 @media (max-width: 1549px) {
+    .t825__btn{
+        right: 80px;
+        bottom: 170px;
+    }
     .arrow-top{
         background-color: white;
      right: 20px;
-     bottom: 30px;
+     bottom: 25px;
      border-radius: 50%;
-     padding: 30px;
+     padding: 15px;
      box-sizing: content-box;
      transition: 0.2s ease;
-     &:hover{
-         padding: 20px;
-         right: 30px;
-         bottom: 40px;
-     }
+   
     }
     .menu-items {
         width: 100%;
@@ -788,19 +792,19 @@ header {
 }
 
 @media (max-width: 1123px) {
+    .t825__btn{
+        right: 76px;
+        bottom: 170px;
+    }
     .arrow-top{
    
-        right: 20px;
-        bottom: 30px;
+        right: 18px;
+        bottom: 25px;
         border-radius: 50%;
-        padding: 10px;
+        padding: 13px;
         box-sizing: content-box;
         transition: 0.2s ease;
-        &:hover{
-            padding: 10px;
-            right: 20px;
-            bottom: 30px;
-        }
+     
        }
     .carousel-caption h3 {
 

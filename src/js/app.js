@@ -103,11 +103,11 @@ function changeCityKyiv() {
         if ($(this).scrollTop() > 200) {
         $('.arrow-top').fadeIn();
         $('.arrow-top').css('position','fixed');
- 
+        $('.t825__animated-circle').fadeIn();
        
         } else {
         $('.arrow-top').fadeOut();
-       
+        $('.t825__animated-circle').fadeOut();
         }
     })
         $('.arrow-top').click(function () {
