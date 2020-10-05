@@ -352,7 +352,6 @@
 
 .t825__animated-circle {
   left: 40px;
-  bottom: 70px;
   width: 60px;
   height: 60px;
   background: #0fa6da;
@@ -367,6 +366,7 @@
 
 .t825__btn {
   position: fixed;
+  bottom: 80px;
 }
 
 .t825__icon {
@@ -388,7 +388,7 @@
   display: none;
   position: absolute;
   text-align: center;
-  bottom: 140px;
+  bottom: 10px;
   left: 40px;
 }
 .network-content a {
@@ -399,6 +399,13 @@
   padding-top: 20px;
 }
 
+@media (max-width: 880px) {
+  .network-content {
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+  }
+}
 .modal-content {
   min-width: 640px;
   height: 480px;
