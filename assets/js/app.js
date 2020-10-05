@@ -15494,6 +15494,18 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.arrow-top').click(function () {
   }, 1000);
   return false;
 });
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.t825__icon').click(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.t825__animated-circle').css('background', 'white');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.t825__icon').css('dispay', 'none');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.t825__icon-close').css('display', 'block');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.network-content').fadeIn();
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.t825__icon-close').click(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.t825__animated-circle').css('background', '#0fa6da');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.t825__icon').css('dispay', 'block');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.t825__icon-close').css('display', 'none');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.network-content').fadeOut();
+});
 
 /***/ }),
 

@@ -12,12 +12,13 @@
  position: absolute;
  display: none;
  border: 1px solid #0997ea;
- 
+ box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.1);
  border-radius: 50%;
  padding: 30px;
  box-sizing: content-box;
  transition: 0.2s ease;
  &:hover{
+    box-shadow:none;
      padding: 20px;
      right: 90px;
      bottom: 60px;
@@ -26,6 +27,56 @@
 .modal-footer {
     border-top: none;
 }
+.t825__animated-circle{
+left: 40px;
+ bottom: 70px;
+    width: 60px;
+    height: 60px;
+    background:#0fa6da;
+    box-sizing: content-box;
+    border-radius: 50%;
+position: absolute;
+z-index: 99;
+ transition: 0.3s ease;
+ box-shadow: 0 0 10px rgba(0,0,0,0.5);
+ cursor: pointer;
+}
+ 
+ 
+.t825__btn{
+    position: fixed;
+}
+.t825__icon{
+    padding: 13px;
+    position: absolute;
+  box-sizing: content-box;
+}
+.t825__icon-close{
+    position: absolute;
+     display: none;
+     margin-left: 10px;
+     margin-top: 10px;
+     padding: 10px;
+     box-sizing: content-box;
+}
+
+.network-content{
+    display: none;
+    position: absolute;
+  text-align: center;
+    bottom: 140px;
+    left: 40px;
+    a{
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 17px;
+        color: #202020;
+       padding-top: 20px;
+      
+    }
+}
+ 
+
 
 .modal-content {
     min-width: 640px;

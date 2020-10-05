@@ -116,3 +116,17 @@ function changeCityKyiv() {
             }, 1000);
             return false;
         });
+
+        $('.t825__icon').click(function () {
+            $('.t825__animated-circle').css('background','white');
+            $('.t825__icon').css('dispay','none');
+            $('.t825__icon-close').css('display','block');
+            $('.network-content').fadeIn();
+        });
+        
+        $('.t825__icon-close').click(function () {
+            $('.t825__animated-circle').css('background','#0fa6da');
+            $('.t825__icon').css('dispay','block');
+            $('.t825__icon-close').css('display','none');
+            $('.network-content').fadeOut();
+        });
