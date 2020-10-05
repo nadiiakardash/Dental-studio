@@ -203,6 +203,9 @@ table {
     }
 }
 @media (max-width: 897px){
+    .price-txt-grn {
+        min-width: 120px;
+    }
     .price-do{
         span{
           position: absolute;
@@ -249,16 +252,6 @@ table {
     .cont-block-price{
         padding-left: 20px;
     }
-    td, th {
-  
-        font-size: 14px;
-        line-height: 16px;
-        color: #202020;
-        text-align: right;
-      
-      }
-      .price-do-after{
-          font-size: 12px;
-          line-height: 16px;
-      }
+   
+     
 }
